@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        background-color:gold;
+        background-color: skyblue;
+        background-size: cover;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.5vh;
+      }
+      .myimage{
+        border-radius: 50%;
+        border: 5px dotted white;
+        padding: 10px;
+      }
+      .bg-white .about {
+        color: #2c3e50; /* Dark navy blue for contrast */
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(44, 62, 80, 0.5);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .bg-white .about:hover {
+        color: #ff5722; /* Orange-red hover effect */
+        text-shadow: 2px 2px 8px rgba(255, 87, 34, 0.8);
+        transform: scale(1.05);
+      }
+      
+      /* For light background (Second Paragraph) */
+      .bg-light .about, .bg .about { /* Adjusting for different background classes */
+        color: #2c3e50; /* Dark navy blue for contrast */
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(44, 62, 80, 0.5);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .bg-light .about:hover, .bg .about:hover {
+        color: #d35400; /* Dark orange for hover */
+        text-shadow: 2px 2px 6px rgba(211, 84, 0, 0.7);
+        transform: scale(1.05);
+      }
+      .card {
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card.text-bg-dark { background-color: #34495E; }
+      .card.text-bg-primary { background-color: #3498DB; }
+      .card.text-bg-secondary { background-color: #E74C3C; }
+      .card.text-bg-success { background-color: #2ECC71; }
+      .card.text-bg-warning { background-color: #F39C12; }
+      .tree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-card {
+      background: #1E1E1E; /* Dark grey-black for a softer contrast */
+      color: white;
+      border-radius: 20px;
+      padding: 15px;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-card:hover {
+      background: #3A7CA5; /* Sky blue shade */
+      color: black;
+      transform: scale(1.1);
+  }
+  
+  .card-title {
+      font-size: 18px;
+      font-weight: bold;
+  }
+  .intro{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+ 
+    </style>
+  </head>
+
+  <body>
+
+    <body>   
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Arun Thakur</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto"> 
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./assets/resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    
+  
+    <section id="intro-name">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./assets/images/IMG_7584.jpg" class="d-block mx-lg-auto img-fluid myimage" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <p class="lead"> Hi! I'm <span class="intro">Arun Thakur,</span><br/>
+              a BE-CSE student and a <span class="intro">Web Developer!</span>
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutme">
+      <div class="bg-white text-secondary px-4 py-5 text-center wh">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold">Who am I?</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">
+              <span class="about">I am Arun Thakur, a passionate Computer Science Engineering student at Chandigarh University</span> 
+              with a strong inclination toward <span class="about">software development, blockchain technology, and artificial intelligence.</span> 
+              My journey in tech has been driven by a deep curiosity to solve real-world problems through innovative solutions. 
+              With a solid foundation in <span class="about">Java, C++, Python, and Solidity</span>, I have worked on various projects, including 
+              <span class="about">AI-powered chatbots, IoT-based systems, blockchain applications, and data analysis tools.</span> 
+              My ability to quickly adapt to new technologies and my problem-solving mindset help me thrive in fast-paced development environments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg text-secondary px-4 py-5 text-center bl">
+        <div class="py-5 mb-0">
+          <h1 class="display-5 fw-bold text-white">What can I do?</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-0">
+              <span class="about">I specialize in full-stack web development, blockchain-based smart contracts, and AI-driven applications.</span> 
+              My expertise includes <span class="about">React.js, Node.js, Next.js, and database management</span> for building scalable web applications. 
+              Additionally, I have hands-on experience in <span class="about">networking, IoT systems, and machine learning.</span> 
+              Whether it's <span class="about">designing decentralized applications, optimizing network topologies, or creating AI-powered solutions,</span> 
+              I am always eager to take on new challenges. My strong analytical skills, combined with a knack for teamwork and effective communication, 
+              enable me to develop robust and impactful tech solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-body py-5">
+      <div class="text-center mb-4">
+          <h1 class="display-3 fw-bold">Skills</h1>
+      </div>
+  
+      <div class="container">
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+              <!-- Technical Skills -->
+              <div class="col">
+                  <div class="card text-bg-dark text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">💻 Java</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card text-bg-primary text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">💻 C++</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card text-bg-danger text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">💻 Python</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card text-bg-success text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">💻 SQL</h5>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Interpersonal Skills -->
+              <div class="col">
+                  <div class="card text-bg-success text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">🗣️ Problem-Solving</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card text-bg-danger text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">🗣️ Teamwork</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card text-bg-primary text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">🗣️ Communication</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card text-bg-dark text-center p-3 h-100">
+                      <div class="card-body">
+                          <h5 class="card-title">🗣️ Quick Learning</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section id="projects">
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+        <div class="col-md-6 p-0 mx-auto mt-0">
+          <h1 class="display-3 fw-bold">Projects</h1>
+          <h3 class="fw-normal text-muted mb-0">A showcase of my work</h3>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card text-bg-dark text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">AI Chatbot for Mental Health</h2>
+                <p class="card-text mt-auto">An AI-powered chatbot that provides personalized mental health support.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card text-bg-primary text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">AI Screen Recorder</h2>
+                <p class="card-text mt-auto">A screen recorder with AI-powered summarization and webcam integration.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card text-bg-danger text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Smart Traffic Light System</h2>
+                <p class="card-text mt-auto">An IoT-based traffic management system using Arduino and sensors.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card text-bg-success text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Sales Analysis using Python</h2>
+                <p class="card-text mt-auto">A data analysis project for e-commerce sales trends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
+          <div class="col">
+            <div class="card text-bg-success text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">NFT Collection (JavaScript)</h2>
+                <p class="card-text mt-auto">A project for managing NFTs using JavaScript.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card text-bg-danger text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Blockchain Voting System</h2>
+                <p class="card-text mt-auto">A Solidity-based decentralized voting application.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card text-bg-primary text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">DegenToken</h2>
+                <p class="card-text mt-auto">An ERC20 token for gaming platforms.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card text-bg-dark text-center p-3 h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Polygon NFT Bridge</h2>
+                <p class="card-text mt-auto">Cross-chain NFT bridging using Polygon and Ethereum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact" class="container-fluid py-5 bg-white mt-5">
+      <div class="container px-5">
+        <div class="row g-4 align-items-center text-center text-md-start">
+          <div class="col-md-4">
+            <h1>Contact Me</h1>
+            <p>
+              <span class="fw-bold">Email:</span> arunt1238@gmail.com <br/>
+              <span class="fw-bold">Address:</span> Sector - 41 (B), Chandigarh.<br />
+              160036 - India<br />
+            </p>
+          </div>
+    
+          <div class="col-md-1 d-none d-md-block text-center">
+            <p class="fw-bold">OR</p>
+          </div>
+    
+          <div class="col-md-6 offset-md-1 card border-dark text-center p-3">
+            <h5>Enter your email, and I'll get back to you!</h5>
+            <form onsubmit="sendEmail(event)">
+              <input type="email" id="emailInput" class="form-control mb-3" placeholder="Enter your email" required>
+              <button type="submit" class="btn btn-success">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 pb-0 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Arun Thakur</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/exquisitehabibi">GitHub</a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://leetcode.com/u/Tot2RlXTw0/">LeetCode</a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#">Instagram</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      function sendEmail(event) {
+          event.preventDefault(); // Prevents page reload
+
+          let email = document.getElementById("emailInput").value;
+          let mailtoLink = `mailto:arunt1238@gmail.com?subject=Contact Request&body=Hello Arun, please contact me at: ${email}`;
+          
+          window.location.href = mailtoLink;
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    
+    
+    
+  </body>
+</html>
